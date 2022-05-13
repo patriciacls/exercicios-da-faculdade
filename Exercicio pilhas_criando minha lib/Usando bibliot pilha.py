@@ -1,0 +1,32 @@
+'''Usando bibliot pilha'''
+import stack #importo a minha biblioteca
+
+
+Pilha = stack.inicializaPilha() #função de inicializar
+print("Minha pilha vazia: ")
+print(Pilha)
+print("Minha pilha esta vazia? ")
+print(stack.pilhaVazia(Pilha))
+print("Minha pilha esta cheia? ")
+print(stack.pilhaCheia(Pilha))
+stack.push(Pilha,'a')
+stack.push(Pilha,'b')
+stack.push(Pilha,'c')
+print("Novos push: ")
+print(Pilha)
+print("1x pop")
+stack.pope(Pilha)
+print("1x pop")
+print(Pilha)
+stack.pope(Pilha)
+print(Pilha)
+print("Minha pilha esta cheia? ")
+print(stack.pilhaCheia(Pilha))
+stack.push(Pilha,'d')
+print(Pilha)
+print("Qual esta no topo? ")
+print(stack.top(Pilha))
+stack.pope(Pilha)
+print(Pilha)
+print("Qual esta no topo? ")
+print(stack.top(Pilha))
